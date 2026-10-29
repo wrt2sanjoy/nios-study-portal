@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIOS Class 10 (211) Mathematics — Master Formula Cheat Sheet | NIOS Maths (211) FastTrack</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '$', right: '$', display: false}
+    ],
+    throwOnError: false
+  });"></script>
+<style>
+  :root {
+    --primary: #1e40af;
+    --primary-light: #eff6ff;
+    --accent: #0284c7;
+    --text: #1f2937;
+    --bg: #ffffff;
+    --card-bg: #f8fafc;
+    --border: #e2e8f0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    color: var(--text);
+    background: var(--bg);
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 20px 80px 20px;
+  }
+  header.banner {
+    background: linear-gradient(135deg, #1e3a8a 0%, #0284c7 100%);
+    color: white;
+    padding: 24px 20px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  }
+  header.banner h1 {
+    margin: 0 0 6px 0;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  header.banner p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 14px;
+  }
+  .action-bar {
+    display: flex;
+    gap: 12px;
+    margin-top: 14px;
+    flex-wrap: wrap;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+  }
+  .btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  h1, h2, h3, h4 {
+    color: #0f172a;
+    font-weight: 700;
+  }
+  h1 { font-size: 26px; border-bottom: 2px solid var(--border); padding-bottom: 8px; margin-top: 32px; }
+  h2 { font-size: 20px; border-bottom: 1px solid var(--border); padding-bottom: 6px; margin-top: 28px; color: var(--primary); }
+  h3 { font-size: 17px; margin-top: 22px; color: #334155; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0;
+    font-size: 14px;
+    overflow-x: auto;
+    display: block;
+    background: var(--card-bg);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  th, td {
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    text-align: left;
+  }
+  th {
+    background: #e2e8f0;
+    color: #1e293b;
+    font-weight: 600;
+  }
+  tr:nth-child(even) {
+    background: #f1f5f9;
+  }
+  blockquote {
+    border-left: 4px solid var(--accent);
+    background: var(--primary-light);
+    margin: 16px 0;
+    padding: 12px 18px;
+    border-radius: 0 8px 8px 0;
+    color: #1e3a8a;
+  }
+  blockquote p {
+    margin: 0;
+  }
+  code {
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #d97706;
+  }
+  pre {
+    background: #1e293b;
+    color: #f8fafc;
+    padding: 14px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 13px;
+  }
+  pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+  }
+  .katex-display {
+    margin: 1em 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  @media print {
+    body { background: white; }
+    .container { max-width: 100%; padding: 0; }
+    .action-bar { display: none !important; }
+    header.banner { background: none; color: black; border: 1px solid #ccc; box-shadow: none; }
+    header.banner h1 { color: black; }
+    h1, h2, h3 { page-break-after: avoid; }
+    table, pre, blockquote { page-break-inside: avoid; }
+  }
+  @media (max-width: 640px) {
+    .container { padding: 14px 12px; }
+    header.banner { padding: 16px 14px; border-radius: 8px; }
+    header.banner h1 { font-size: 20px; }
+    h1 { font-size: 22px; }
+    h2 { font-size: 18px; }
+    table { font-size: 13px; }
+    th, td { padding: 8px 10px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="banner">
+    <h1>NIOS Class 10 (211) Mathematics — Master Formula Cheat Sheet</h1>
+    <p>NIOS Secondary (Class 10) Mathematics (211) — Exam Prep Study Kit</p>
+    <div class="action-bar">
+      <button class="btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
+      <a class="btn" href="../index.html">🏠 All Study Guides</a>
+    </div>
+  </header>
+  <main>
+    <h1>NIOS Class 10 (211) Mathematics — Master Formula Cheat Sheet</h1>
+<h3>1-Stop Formula Reference for Public Examination</h3>
+<blockquote>
+<p><strong>How to use this</strong>: Keep this file open on your phone or print it out. Review these formulas every single day until 5th November. Over 60% of exam marks come from direct application of these formulas!</p>
+</blockquote>
+<hr />
+<h2>1. Trigonometry &amp; Heights and Distances (Module 5 — 10 Marks)</h2>
+<h3>Trigonometric Values Table (MEMORIZE THIS ENTIRE ROW!)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Angle ($\theta$)</th>
+<th style="text-align: center;">$0^\circ$</th>
+<th style="text-align: center;">$30^\circ$</th>
+<th style="text-align: center;">$45^\circ$</th>
+<th style="text-align: center;">$60^\circ$</th>
+<th style="text-align: center;">$90^\circ$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">$\sin \theta$</td>
+<td style="text-align: center;">$0$</td>
+<td style="text-align: center;">$\frac{1}{2}$</td>
+<td style="text-align: center;">$\frac{1}{\sqrt{2}}$</td>
+<td style="text-align: center;">$\frac{\sqrt{3}}{2}$</td>
+<td style="text-align: center;">$1$</td>
+</tr>
+<tr>
+<td style="text-align: left;">$\cos \theta$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$\frac{\sqrt{3}}{2}$</td>
+<td style="text-align: center;">$\frac{1}{\sqrt{2}}$</td>
+<td style="text-align: center;">$\frac{1}{2}$</td>
+<td style="text-align: center;">$0$</td>
+</tr>
+<tr>
+<td style="text-align: left;">$\tan \theta$</td>
+<td style="text-align: center;">$0$</td>
+<td style="text-align: center;">$\frac{1}{\sqrt{3}}$</td>
+<td style="text-align: center;"><strong>$1$</strong></td>
+<td style="text-align: center;"><strong>$\sqrt{3}$</strong></td>
+<td style="text-align: center;">Not defined</td>
+</tr>
+<tr>
+<td style="text-align: left;">$\mathrm{cosec} \theta$</td>
+<td style="text-align: center;">Not defined</td>
+<td style="text-align: center;">$2$</td>
+<td style="text-align: center;">$\sqrt{2}$</td>
+<td style="text-align: center;">$\frac{2}{\sqrt{3}}$</td>
+<td style="text-align: center;">$1$</td>
+</tr>
+<tr>
+<td style="text-align: left;">$\sec \theta$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$\frac{2}{\sqrt{3}}$</td>
+<td style="text-align: center;">$\sqrt{2}$</td>
+<td style="text-align: center;"><strong>$2$</strong></td>
+<td style="text-align: center;">Not defined</td>
+</tr>
+<tr>
+<td style="text-align: left;">$\cot \theta$</td>
+<td style="text-align: center;">Not defined</td>
+<td style="text-align: center;">$\sqrt{3}$</td>
+<td style="text-align: center;">$1$</td>
+<td style="text-align: center;">$\frac{1}{\sqrt{3}}$</td>
+<td style="text-align: center;">$0$</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Pro Tip for Heights &amp; Distances (5 Marks Q44)</strong>:
+In almost every problem, you will use $\tan \theta = \frac{\text{Height (Opposite)}}{\text{Distance (Adjacent)}}$:
+- When $\theta = 45^\circ \implies \tan 45^\circ = 1 \implies \mathbf{\text{Height} = \text{Distance}}$!
+- When $\theta = 30^\circ \implies \tan 30^\circ = \frac{1}{\sqrt{3}}$
+- When $\theta = 60^\circ \implies \tan 60^\circ = \sqrt{3}$
+- Remember: $\sqrt{3} \approx 1.732$.</p>
+</blockquote>
+<h3>Core Trigonometric Identities</h3>
+<ul>
+<li>$\sin^2\theta + \cos^2\theta = 1 \implies \sin^2\theta = 1 - \cos^2\theta \implies \cos^2\theta = 1 - \sin^2\theta$</li>
+<li>$1 + \tan^2\theta = \sec^2\theta \implies \sec^2\theta - \tan^2\theta = 1$</li>
+<li>$1 + \cot^2\theta = \mathrm{cosec}^2\theta \implies \mathrm{cosec}^2\theta - \cot^2\theta = 1$</li>
+<li>$\tan\theta = \frac{\sin\theta}{\cos\theta}, \quad \cot\theta = \frac{\cos\theta}{\sin\theta}, \quad \sec\theta = \frac{1}{\cos\theta}, \quad \mathrm{cosec}\theta = \frac{1}{\sin\theta}$</li>
+</ul>
+<hr />
+<h2>2. Algebra (Module 1 — 20 Marks)</h2>
+<h3>Special Products &amp; Factorisation (Ch 4)</h3>
+<ul>
+<li>$(a + b)^2 = a^2 + 2ab + b^2$</li>
+<li>$(a - b)^2 = a^2 - 2ab + b^2$</li>
+<li>$(a + b)^2 + (a - b)^2 = 2(a^2 + b^2)$</li>
+<li>$(a + b)^2 - (a - b)^2 = 4ab$</li>
+<li>$a^2 - b^2 = (a + b)(a - b)$</li>
+<li>$a^3 + b^3 = (a + b)(a^2 - ab + b^2)$</li>
+<li>$a^3 - b^3 = (a - b)(a^2 + ab + b^2)$</li>
+<li>$(a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + bc + ca)$</li>
+</ul>
+<h3>Linear Equations in Two Variables (Ch 5)</h3>
+<p>For system $a_1 x + b_1 y = c_1$ and $a_2 x + b_2 y = c_2$:
+- $\frac{a_1}{a_2} \neq \frac{b_1}{b_2} \implies$ <strong>Unique solution</strong> (Lines intersect at 1 point, Consistent).
+- $\frac{a_1}{a_2} = \frac{b_1}{b_2} = \frac{c_1}{c_2} \implies$ <strong>Infinitely many solutions</strong> (Coincident lines, Dependent Consistent).
+- $\frac{a_1}{a_2} = \frac{b_1}{b_2} \neq \frac{c_1}{c_2} \implies$ <strong>No solution</strong> (Parallel lines, Inconsistent).</p>
+<h3>Quadratic Equations (Ch 6)</h3>
+<p>Standard form: $ax^2 + bx + c = 0$ ($a \neq 0$)
+- <strong>Discriminant</strong>: $D = b^2 - 4ac$
+- <strong>Nature of Roots</strong>:
+  - $D > 0 \implies$ Two real and distinct roots
+  - $D = 0 \implies$ Two real and equal roots ($x = -\frac{b}{2a}$)
+  - $D < 0 \implies$ No real roots
+- <strong>Quadratic Formula</strong>:
+  $$x = \frac{-b \pm \sqrt{D}}{2a} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+- <strong>Sum &amp; Product of Roots</strong>:
+  - Sum of roots $\alpha + \beta = -\frac{b}{a}$
+  - Product of roots $\alpha \cdot \beta = \frac{c}{a}$</p>
+<h3>Arithmetic Progression (AP - Ch 7)</h3>
+<ul>
+<li>Common difference: $d = a_n - a_{n-1}$</li>
+<li><strong>$n$-th term</strong>:
+  $$a_n = a + (n - 1)d$$</li>
+<li><strong>Sum of first $n$ terms</strong>:
+  $$S_n = \frac{n}{2}[2a + (n - 1)d] \quad \text{or} \quad S_n = \frac{n}{2}[a + l]$$
+  <em>(where $l = a_n$ is the last term)</em></li>
+</ul>
+<hr />
+<h2>3. Coordinate Geometry (Module 3 — Ch 19 — 6 to 8 Marks)</h2>
+<ul>
+<li><strong>Distance between two points $P(x_1, y_1)$ and $Q(x_2, y_2)$</strong>:
+  $$d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$</li>
+<li><strong>Distance of point $(x, y)$ from origin $(0, 0)$</strong>:
+  $$d = \sqrt{x^2 + y^2}$$</li>
+<li><strong>Mid-point of line segment joining $(x_1, y_1)$ and $(x_2, y_2)$</strong>:
+  $$M = \left(\frac{x_1 + x_2}{2}, \; \frac{y_1 + y_2}{2}\right)$$</li>
+<li><strong>Section Formula (Internal division in ratio $m : n$)</strong>:
+  $$P(x, y) = \left(\frac{m x_2 + n x_1}{m + n}, \; \frac{m y_2 + n y_1}{m + n}\right)$$
+  <em>(Tip: If point is on y-axis, $x = 0$. If point is on x-axis, $y = 0$)</em></li>
+<li><strong>Centroid of a Triangle with vertices $(x_1, y_1), (x_2, y_2), (x_3, y_3)$</strong>:
+  $$G = \left(\frac{x_1 + x_2 + x_3}{3}, \; \frac{y_1 + y_2 + y_3}{3}\right)$$</li>
+</ul>
+<hr />
+<h2>4. Circle Geometry &amp; Theorems (Module 3 — Ch 16 &amp; 17 — 10 Marks)</h2>
+<ol>
+<li><strong>Tangent $\perp$ Radius</strong>: A tangent at any point of a circle is perpendicular to the radius through the point of contact ($\angle OPT = 90^\circ$).</li>
+<li><strong>Lengths of Tangents</strong>: The lengths of two tangents drawn from an external point to a circle are equal ($PA = PB$).</li>
+<li><strong>Angle Subtended at Centre</strong>: The angle subtended by an arc at the centre is twice the angle subtended by it at any point on the remaining part of the circle ($\angle AOC = 2 \angle ABC$).</li>
+<li><strong>Angle in Semicircle</strong>: Angle in a semicircle is a right angle ($90^\circ$).</li>
+<li><strong>Angles in Same Segment</strong>: Angles in the same segment of a circle are equal.</li>
+<li><strong>Cyclic Quadrilateral</strong>: The sum of either pair of opposite angles of a cyclic quadrilateral is $180^\circ$ ($\angle A + \angle C = 180^\circ, \; \angle B + \angle D = 180^\circ$).</li>
+</ol>
+<hr />
+<h2>5. Mensuration (Module 4 — Ch 21 — 10 Marks)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Solid Shape</th>
+<th style="text-align: center;">Curved Surface Area (CSA)</th>
+<th style="text-align: center;">Total Surface Area (TSA)</th>
+<th style="text-align: center;">Volume ($V$)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Cuboid</strong> ($l, b, h$)</td>
+<td style="text-align: center;">$2h(l + b)$ <em>(Area of 4 walls)</em></td>
+<td style="text-align: center;">$2(lb + bh + hl)$</td>
+<td style="text-align: center;">$l \times b \times h$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cube</strong> (side $a$)</td>
+<td style="text-align: center;">$4a^2$</td>
+<td style="text-align: center;">$6a^2$</td>
+<td style="text-align: center;">$a^3$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cylinder</strong> (radius $r$, height $h$)</td>
+<td style="text-align: center;">$2\pi rh$</td>
+<td style="text-align: center;">$2\pi r(r + h)$</td>
+<td style="text-align: center;">$\pi r^2 h$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cone</strong> (radius $r$, height $h$, slant $l$)</td>
+<td style="text-align: center;">$\pi rl$ <em>(where $l = \sqrt{r^2 + h^2}$)</em></td>
+<td style="text-align: center;">$\pi r(r + l)$</td>
+<td style="text-align: center;">$\frac{1}{3}\pi r^2 h$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sphere</strong> (radius $r$)</td>
+<td style="text-align: center;">$4\pi r^2$</td>
+<td style="text-align: center;">$4\pi r^2$</td>
+<td style="text-align: center;">$\frac{4}{3}\pi r^3$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Hemisphere</strong> (radius $r$)</td>
+<td style="text-align: center;">$2\pi r^2$</td>
+<td style="text-align: center;">$3\pi r^2$</td>
+<td style="text-align: center;">$\frac{2}{3}\pi r^3$</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Circle Sector &amp; Ring</strong>:</li>
+<li>Area of circle $= \pi r^2$, Circumference $= 2\pi r$</li>
+<li>Area of Sector with central angle $\theta = \frac{\theta}{360^\circ} \times \pi r^2$</li>
+<li>Length of Arc $= \frac{\theta}{360^\circ} \times 2\pi r$</li>
+<li>Area of Circular Ring $= \pi(R^2 - r^2) = \pi(R + r)(R - r)$</li>
+</ul>
+<hr />
+<h2>6. Statistics &amp; Probability (Module 6 — Ch 25 &amp; 26 — 12 Marks)</h2>
+<h3>Statistics (Ch 25)</h3>
+<ul>
+<li><strong>Mean (Direct Method)</strong>:
+  $$\bar{x} = \frac{\sum f_i x_i}{\sum f_i}$$</li>
+<li><strong>Median of Grouped Data (3 Marks Sure-Shot!)</strong>:
+  $$\text{Median} = L + \left(\frac{\frac{N}{2} - cf}{f}\right) \times h$$</li>
+<li>$L$ = Lower limit of median class</li>
+<li>$N = \sum f_i$ = Total frequency</li>
+<li>$cf$ = Cumulative frequency of the class <em>preceding</em> the median class</li>
+<li>$f$ = Frequency of the median class</li>
+<li>$h$ = Class width (upper limit $-$ lower limit)</li>
+<li><strong>Empirical Formula (Very common 1-mark question!)</strong>:
+  $$\mathbf{\text{Mode} = 3\,\text{Median} - 2\,\text{Mean}}$$</li>
+</ul>
+<h3>Probability (Ch 26)</h3>
+<ul>
+<li>$$P(E) = \frac{\text{Number of favourable outcomes}}{\text{Total number of possible outcomes}}$$</li>
+<li>Range of probability: $0 \le P(E) \le 1$</li>
+<li>Sum of complementary probabilities: $P(E) + P(\bar{E}) = 1 \implies P(\text{not } E) = 1 - P(E)$</li>
+<li>Standard coin toss outcomes:</li>
+<li>1 coin: $\{H, T\}$ (Total = 2)</li>
+<li>2 coins: $\{HH, HT, TH, TT\}$ (Total = 4)</li>
+<li>Standard dice outcomes:</li>
+<li>1 die: $\{1, 2, 3, 4, 5, 6\}$ (Total = 6)</li>
+<li>2 dice: Total outcomes = $6 \times 6 = 36$</li>
+<li>Standard deck of cards: Total = 52 cards (26 Red: 13 Hearts + 13 Diamonds; 26 Black: 13 Spades + 13 Clubs; 12 Face Cards: 4 Kings + 4 Queens + 4 Jacks; 4 Aces).</li>
+</ul>
+<hr />
+<h2>7. Commercial Mathematics — Installment Buying (Ch 9 — 8 Marks)</h2>
+<ul>
+<li><strong>Cash Price</strong>: Price of the article if paid in full immediately.</li>
+<li><strong>Cash Down Payment (CDP)</strong>: Amount paid in cash at the time of purchase.</li>
+<li><strong>Unpaid Balance (Principal)</strong> $= \text{Cash Price} - \text{Cash Down Payment}$</li>
+<li><strong>Total Amount Paid under Installment Scheme</strong> $= \text{Down Payment} + (n \times \text{Monthly Installment Amount})$</li>
+<li><strong>Total Interest Paid</strong> $= \text{Total Amount Paid} - \text{Cash Price}$</li>
+</ul>
+  </main>
+</div>
+</body>
+</html>

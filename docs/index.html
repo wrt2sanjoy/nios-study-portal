@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIOS FastTrack Learning Portal | Secondary (Class 10)</title>
+<meta name="description" content="Free, fast-track NIOS Secondary Class 10 exam preparation portal for working students. High-yield notes, formula cheat sheets, solved PYQs and mock papers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #090d16;
+    --surface: #111827;
+    --surface-hover: #1f2937;
+    --border: #1f293d;
+    --text: #f3f4f6;
+    --text-muted: #94a3b8;
+    --math-primary: #38bdf8;
+    --math-gradient: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
+    --sci-primary: #34d399;
+    --sci-gradient: linear-gradient(135deg, #059669 0%, #0d9488 100%);
+    --accent: #f59e0b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding-bottom: 60px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  /* Header & Hero */
+  header.hero {
+    padding: 48px 0 32px 0;
+    text-align: center;
+    position: relative;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(56, 189, 248, 0.1);
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    padding: 6px 16px;
+    border-radius: 9999px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  h1.title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+    line-height: 1.2;
+    margin-bottom: 14px;
+    background: linear-gradient(135deg, #ffffff 30%, #94a3b8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  p.subtitle {
+    color: var(--text-muted);
+    font-size: 16px;
+    max-width: 680px;
+    margin: 0 auto 28px auto;
+  }
+  /* Quick Tab Switcher */
+  .tab-nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+  .tab-btn {
+    background: var(--surface);
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .tab-btn.active-math {
+    background: var(--math-gradient);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
+  }
+  .tab-btn.active-sci {
+    background: var(--sci-gradient);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
+  }
+  /* Subject Cards */
+  .subject-section {
+    margin-bottom: 48px;
+  }
+  .subject-header {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .subject-header.math { border-left: 5px solid var(--math-primary); }
+  .subject-header.sci { border-left: 5px solid var(--sci-primary); }
+  .subject-info h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4px;
+  }
+  .subject-info p {
+    color: var(--text-muted);
+    font-size: 14px;
+  }
+  .master-pdf-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #ffffff;
+    color: #0f172a;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .master-pdf-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(255, 255, 255, 0.2);
+  }
+  /* Guide Grid */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 14px;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.2s ease;
+  }
+  .card:hover {
+    border-color: #3b82f6;
+    background: var(--surface-hover);
+    transform: translateY(-2px);
+  }
+  .card-step {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+  .math-card .card-step { color: var(--math-primary); }
+  .sci-card .card-step { color: var(--sci-primary); }
+  .card-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #f8fafc;
+    margin-bottom: 6px;
+  }
+  .card-desc {
+    color: var(--text-muted);
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    flex-grow: 1;
+  }
+  .card-actions {
+    display: flex;
+    gap: 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding-top: 12px;
+  }
+  .action-btn {
+    flex: 1;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.15s ease;
+  }
+  .action-btn:hover { opacity: 0.9; }
+  .btn-read {
+    background: rgba(255, 255, 255, 0.1);
+    color: #f8fafc;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .btn-pdf {
+    background: #1e293b;
+    color: #94a3b8;
+    border: 1px solid #334155;
+  }
+  .btn-pdf:hover {
+    color: white;
+    background: #334155;
+  }
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 36px 0 12px 0;
+    color: #64748b;
+    font-size: 13px;
+    border-top: 1px solid var(--border);
+    margin-top: 48px;
+  }
+  @media (max-width: 640px) {
+    h1.title { font-size: 28px; }
+    p.subtitle { font-size: 14px; }
+    .grid { grid-template-columns: 1fr; }
+    .subject-header { flex-direction: column; align-items: flex-start; }
+    .master-pdf-btn { width: 100%; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header class="hero">
+    <div class="badge">🚀 NIOS Secondary (Class 10) FastTrack</div>
+    <h1 class="title">Distance Learning Study Portal</h1>
+    <p class="subtitle">High-yield revision plans, master formula cheat sheets, repeated objective question banks, and solved long questions designed for working students.</p>
+    <div class="tab-nav">
+      <a href="#maths" class="tab-btn active-math">📐 Mathematics (211)</a>
+      <a href="#science" class="tab-btn active-sci">🔬 Science & Tech (212)</a>
+    </div>
+  </header>
+
+  <!-- MATHEMATICS SECTION -->
+  <section id="maths" class="subject-section">
+    <div class="subject-header math">
+      <div class="subject-info">
+        <h2>📐 Mathematics (Subject Code: 211)</h2>
+        <p>Exam Date: 5th November | 13 Public Exam Lessons | 42 Objective Marks | 43 Theory Marks</p>
+      </div>
+      <a href="maths/pdf/00_MASTER_ALL_IN_ONE_NIOS_MATHS_211.pdf" class="master-pdf-btn" download>
+        📥 Download Master Book (50 Pages PDF)
+      </a>
+    </div>
+
+    <div class="grid">
+      <div class="card math-card">
+        <div class="card-step">Step 00 • Strategy</div>
+        <div class="card-title">7-Day Exam Cracker Timetable</div>
+        <div class="card-desc">Day-by-day revision plan tailored for 2 hours daily study (1 hr morning + 1 hr night).</div>
+        <div class="card-actions">
+          <a href="maths/00_7_DAY_EXAM_CRACKER_PLAN.html" class="action-btn btn-read">📱 Read Online</a>
+          <a href="maths/pdf/00_7_DAY_EXAM_CRACKER_PLAN.pdf" class="action-btn btn-pdf">📥 PDF</a>
+        </div>
+      </div>
+
+      <div class="card math-card">
+        <div class="card-step">Step 01 • Syllabus Cut</div>
+        <div class="card-title">Syllabus Bifurcation & Blueprint</div>
+        <div class="card-desc">Save 50% time: Exactly which 13 chapters to study vs which 13 TMA chapters to completely skip.</div>
+        <div class="card-actions">
+          <a href="maths/01_SYLLABUS_BIFURCATION_AND_MARKS_BLUEPRINT.html" class="action-btn btn-read">📱 Read Online</a>
+          <a href="maths/pdf/01_SYLLABUS_BIFURCATION_AND_MARKS_BLUEPRINT.pdf" class="action-btn btn-pdf">📥 PDF</a>
+        </div>
+      </div>
+
+      <div class="card math-card">
+        <div class="card-step">Step 02 • Formulas</div>
+        <div class="card-title">Master Formula Cheat Sheet</div>
+        <div class="card-desc">Trigonometric table, Circle theorems, AP formulas, Coordinate geometry, and Mensuration shortcuts.</div>
+        <div class="card-actions">
+          <a href="maths/02_ALL_IN_ONE_FORMULA_CHEAT_SHEET.html" class="action-btn btn-read">📱 Read Online</a>
+          <a href="maths/pdf/02_ALL_IN_ONE_FORMULA_CHEAT_SHEET.pdf" class="action-btn btn-pdf">📥 PDF</a>
+        </div>
+      </div>
+
+      <div class="card math-card">
+        <div class="card-step">Step 03 • 42 Marks Goldmine</div>
+        <div class="card-title">Top 50 Repeated Objectives (MCQs)</div>
+        <div class="card-desc">50 solved 1-mark and 2-mark questions (MCQs, Fill-in-blanks, True/False) from 2019–2025 papers.</div>
+        <div class="card-actions">
+          <a href="maths/03_TOP_50_REPEATED_OBJECTIVES_MCQ_SOLVED.html" class="action-btn btn-read">📱 Read Online</a>
+          <a href="maths/pdf/03_TOP_50_REPEATED_OBJECTIVES_MCQ_SOLVED.pdf" class="action-btn btn-pdf">📥 PDF</a>
+        </div>
+      </div>
+
+      <div class="card math-card">
+        <div class="card-step">Step 04 • Long Answers</div>
+        <div class="card-title">Guaranteed Sure-Shot Long Questions</div>
+        <div class="card-desc">Fully solved step-by-step templates: Heights & Distances (5M), Graphs (5M), Circles, and Median.</div>
+        <div class="card-actions">
+          <a href="maths/04_GUARANTEED_SURE_SHOT_LONG_QUESTIONS.html" class="action-btn btn-read">📱 Read Online</a>
+          <a href="maths/pdf/04_GUARANTEED_SURE_SHOT_LONG_QUESTIONS.pdf" class="action-btn btn-pdf">📥 PDF</a>
+        </div>
+      </div>
+
+      <div class="card math-card">
+        <div class="card-step">Step 05 • Fast Notes</div>
+        <div class="card-title">Chapter-by-Chapter Super Summary</div>
+        <div class="card-desc">Crisp 1-page summaries with worked examples for all 13 Public Examination lessons.</div>
+        <div class="card-actions">
+          <a href="maths/05_CHAPTER_BY_CHAPTER_SUPER_SUMMARY.html" class="action-btn btn-read">📱 Read Online</a>
+          <a href="maths/pdf/05_CHAPTER_BY_CHAPTER_SUPER_SUMMARY.pdf" class="action-btn btn-pdf">📥 PDF</a>
+        </div>
+      </div>
+
+      <div class="card math-card">
+        <div class="card-step">Step 06 • Final Test</div>
+        <div class="card-title">Predicted Mock Test Paper 2026</div>
+        <div class="card-desc">Full 85-mark predicted exam paper matching 2024–2025 pattern with complete solutions.</div>
+        <div class="card-actions">
+          <a href="maths/06_PREDICTED_MOCK_TEST_PAPER_2026.html" class="action-btn btn-read">📱 Read Online</a>
+          <a href="maths/pdf/06_PREDICTED_MOCK_TEST_PAPER_2026.pdf" class="action-btn btn-pdf">📥 PDF</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCIENCE SECTION -->
+  <section id="science" class="subject-section">
+    <div class="subject-header sci">
+      <div class="subject-info">
+        <h2>🔬 Science & Technology (Subject Code: 212)</h2>
+        <p>19 Public Exam Lessons (13 TMA Lessons Skipped) | 42 Objective Marks | 43 Theory Marks</p>
+      </div>
+      <a href="science/pdf/00_MASTER_ALL_IN_ONE_NIOS_SCIENCE_212.pdf" class="master-pdf-btn" download>
+        📥 Download Master Book (51 Pages PDF)
+      </a>
+    </div>
+
+    <div class="grid">
+      <div class="card sci-card">
+        <div class="card-step">Step 00 • Strategy</div>
+        <div class="card-title">7-Day Science Revision Timetable</div>
+        <div class="card-desc">Optimized study routine balancing Physics, Chemistry, and Biology within 2 hours daily.</div>
+        <div class="card-actions">
+          <a href="science/00_7_DAY_EXAM_CRACKER_PLAN.html" class="action-btn btn-read">📱 Read Online</a>
+          <a href="science/pdf/00_7_DAY_EXAM_CRACKER_PLAN.pdf" class="action-btn btn-pdf">📥 PDF</a>
+        </div>
+      </div>
+
+      <div class="card sci-card">
+        <div class="card-step">Step 01 • Syllabus Cut</div>
+        <div class="card-title">Syllabus Bifurcation & Blueprint</div>
+        <div class="card-desc">Clear map of the 19 lessons to study vs the 13 TMA lessons completely excluded from the exam.</div>
+        <div class="card-actions">
+          <a href="science/01_SYLLABUS_BIFURCATION_AND_MARKS_BLUEPRINT.html" class="action-btn btn-read">📱 Read Online</a>
+          <a href="science/pdf/01_SYLLABUS_BIFURCATION_AND_MARKS_BLUEPRINT.pdf" class="action-btn btn-pdf">📥 PDF</a>
+        </div>
+      </div>
+
+      <div class="card sci-card">
+        <div class="card-step">Step 02 • Core Sheet</div>
+        <div class="card-title">Master Formula & Concepts Sheet</div>
+        <div class="card-desc">Physics formulas, 4 chemical salts table, reactivity series, genetics ratios, and ecology laws.</div>
+        <div class="card-actions">
+          <a href="science/02_ALL_IN_ONE_SCIENCE_FORMULA_AND_CONCEPTS_SHEET.html" class="action-btn btn-read">📱 Read Online</a>
+          <a href="science/pdf/02_ALL_IN_ONE_SCIENCE_FORMULA_AND_CONCEPTS_SHEET.pdf" class="action-btn btn-pdf">📥 PDF</a>
+        </div>
+      </div>
+
+      <div class="card sci-card">
+        <div class="card-step">Step 03 • 42 Marks Goldmine</div>
+        <div class="card-title">Top 50 Repeated Objectives (MCQs)</div>
+        <div class="card-desc">50 high-yield questions covering Section A: SI units, chemical formulas, pH values, and eye defects.</div>
+        <div class="card-actions">
+          <a href="science/03_TOP_50_REPEATED_OBJECTIVES_MCQ_SOLVED.html" class="action-btn btn-read">📱 Read Online</a>
+          <a href="science/pdf/03_TOP_50_REPEATED_OBJECTIVES_MCQ_SOLVED.pdf" class="action-btn btn-pdf">📥 PDF</a>
+        </div>
+      </div>
+
+      <div class="card sci-card">
+        <div class="card-step">Step 04 • Long Answers</div>
+        <div class="card-title">Guaranteed Diagrams & Long Questions</div>
+        <div class="card-desc">Solved templates: Myopia/Hypermetropia, Ohm's law, 4 Salts equations, Nephron, and Mendel's cross.</div>
+        <div class="card-actions">
+          <a href="science/04_GUARANTEED_SURE_SHOT_DIAGRAMS_AND_LONG_QUESTIONS.html" class="action-btn btn-read">📱 Read Online</a>
+          <a href="science/pdf/04_GUARANTEED_SURE_SHOT_DIAGRAMS_AND_LONG_QUESTIONS.pdf" class="action-btn btn-pdf">📥 PDF</a>
+        </div>
+      </div>
+
+      <div class="card sci-card">
+        <div class="card-step">Step 05 • Fast Notes</div>
+        <div class="card-title">Chapter-by-Chapter Super Summary</div>
+        <div class="card-desc">Crisp summaries, key chemical reactions, and physiology diagrams for all 19 Public Exam chapters.</div>
+        <div class="card-actions">
+          <a href="science/05_CHAPTER_BY_CHAPTER_SUPER_SUMMARY.html" class="action-btn btn-read">📱 Read Online</a>
+          <a href="science/pdf/05_CHAPTER_BY_CHAPTER_SUPER_SUMMARY.pdf" class="action-btn btn-pdf">📥 PDF</a>
+        </div>
+      </div>
+
+      <div class="card sci-card">
+        <div class="card-step">Step 06 • Final Test</div>
+        <div class="card-title">Predicted Mock Test Paper 2026</div>
+        <div class="card-desc">Complete 85-mark predicted mock test with full step-by-step marking scheme and solutions.</div>
+        <div class="card-actions">
+          <a href="science/06_PREDICTED_MOCK_TEST_PAPER_2026.html" class="action-btn btn-read">📱 Read Online</a>
+          <a href="science/pdf/06_PREDICTED_MOCK_TEST_PAPER_2026.pdf" class="action-btn btn-pdf">📥 PDF</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>NIOS Secondary (Class 10) FastTrack Exam Prep • Built for Working Students</p>
+    <p style="margin-top: 6px; font-size: 12px; color: #475569;">100% Free Public Learning Portal • All devices supported (Mobile / Tablet / Desktop)</p>
+  </footer>
+</div>
+
+</body>
+</html>
