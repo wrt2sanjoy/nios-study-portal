@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIOS Secondary (Class 10) Mathematics (211) | NIOS Maths (211) FastTrack</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '$', right: '$', display: false}
+    ],
+    throwOnError: false
+  });"></script>
+<style>
+  :root {
+    --primary: #1e40af;
+    --primary-light: #eff6ff;
+    --accent: #0284c7;
+    --text: #1f2937;
+    --bg: #ffffff;
+    --card-bg: #f8fafc;
+    --border: #e2e8f0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    color: var(--text);
+    background: var(--bg);
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 20px 80px 20px;
+  }
+  header.banner {
+    background: linear-gradient(135deg, #1e3a8a 0%, #0284c7 100%);
+    color: white;
+    padding: 24px 20px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  }
+  header.banner h1 {
+    margin: 0 0 6px 0;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  header.banner p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 14px;
+  }
+  .action-bar {
+    display: flex;
+    gap: 12px;
+    margin-top: 14px;
+    flex-wrap: wrap;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+  }
+  .btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  h1, h2, h3, h4 {
+    color: #0f172a;
+    font-weight: 700;
+  }
+  h1 { font-size: 26px; border-bottom: 2px solid var(--border); padding-bottom: 8px; margin-top: 32px; }
+  h2 { font-size: 20px; border-bottom: 1px solid var(--border); padding-bottom: 6px; margin-top: 28px; color: var(--primary); }
+  h3 { font-size: 17px; margin-top: 22px; color: #334155; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0;
+    font-size: 14px;
+    overflow-x: auto;
+    display: block;
+    background: var(--card-bg);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  th, td {
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    text-align: left;
+  }
+  th {
+    background: #e2e8f0;
+    color: #1e293b;
+    font-weight: 600;
+  }
+  tr:nth-child(even) {
+    background: #f1f5f9;
+  }
+  blockquote {
+    border-left: 4px solid var(--accent);
+    background: var(--primary-light);
+    margin: 16px 0;
+    padding: 12px 18px;
+    border-radius: 0 8px 8px 0;
+    color: #1e3a8a;
+  }
+  blockquote p {
+    margin: 0;
+  }
+  code {
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #d97706;
+  }
+  pre {
+    background: #1e293b;
+    color: #f8fafc;
+    padding: 14px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 13px;
+  }
+  pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+  }
+  .katex-display {
+    margin: 1em 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  @media print {
+    body { background: white; }
+    .container { max-width: 100%; padding: 0; }
+    .action-bar { display: none !important; }
+    header.banner { background: none; color: black; border: 1px solid #ccc; box-shadow: none; }
+    header.banner h1 { color: black; }
+    h1, h2, h3 { page-break-after: avoid; }
+    table, pre, blockquote { page-break-inside: avoid; }
+  }
+  @media (max-width: 640px) {
+    .container { padding: 14px 12px; }
+    header.banner { padding: 16px 14px; border-radius: 8px; }
+    header.banner h1 { font-size: 20px; }
+    h1 { font-size: 22px; }
+    h2 { font-size: 18px; }
+    table { font-size: 13px; }
+    th, td { padding: 8px 10px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="banner">
+    <h1>NIOS Secondary (Class 10) Mathematics (211)</h1>
+    <p>NIOS Secondary (Class 10) Mathematics (211) — Exam Prep Study Kit</p>
+    <div class="action-bar">
+      <button class="btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
+      <a class="btn" href="../index.html">🏠 All Study Guides</a>
+    </div>
+  </header>
+  <main>
+    <h1>NIOS Secondary (Class 10) Mathematics (211)</h1>
+<h2>High-Probability Predicted Mock Examination (85 Marks)</h2>
+<h3>Time: 2½ Hours | Maximum Marks: 85</h3>
+<blockquote>
+<p><strong>Instructions for the Student</strong>:<br />
+Attempt this paper on <strong>Day 6 (4th November)</strong> with a pen, notebook, and geometry box.<br />
+Set a timer for 2.5 hours. Afterwards, check your answers against the complete step-by-step solutions at the end of this document.</p>
+</blockquote>
+<hr />
+<h2>SECTION A (Objective Type Questions — 42 Marks)</h2>
+<h3>Q1 to Q17: Multiple Choice Questions (1 Mark Each)</h3>
+<ol>
+<li>
+<p>The discriminant of the quadratic equation $2x^2 - 4x + 1 = 0$ is:<br />
+   (A) $8$<br />
+   (B) $-8$<br />
+   (C) $16$<br />
+   (D) $0$</p>
+</li>
+<li>
+<p>The $12^{\text{th}}$ term of the AP $3, 7, 11, 15\dots$ is:<br />
+   (A) $44$<br />
+   (B) $47$<br />
+   (C) $48$<br />
+   (D) $51$</p>
+</li>
+<li>
+<p>By selling a watch for ₹660, a shopkeeper makes a profit of $10\%$. The cost price of the watch was:<br />
+   (A) ₹600<br />
+   (B) ₹590<br />
+   (C) ₹550<br />
+   (D) ₹726</p>
+</li>
+<li>
+<p>In a circle of radius $5\text{ cm}$, a tangent $PT$ of length $12\text{ cm}$ is drawn from external point $P$. The distance $OP$ is:<br />
+   (A) $7\text{ cm}$<br />
+   (B) $13\text{ cm}$<br />
+   (C) $17\text{ cm}$<br />
+   (D) $\sqrt{119}\text{ cm}$</p>
+</li>
+<li>
+<p>The angle subtended by a diameter at any point on the circumference of a circle is:<br />
+   (A) $45^\circ$<br />
+   (B) $60^\circ$<br />
+   (C) $90^\circ$<br />
+   (D) $180^\circ$</p>
+</li>
+<li>
+<p>In a cyclic quadrilateral $ABCD$, $\angle B = 85^\circ$. The measure of $\angle D$ is:<br />
+   (A) $85^\circ$<br />
+   (B) $95^\circ$<br />
+   (C) $105^\circ$<br />
+   (D) $180^\circ$</p>
+</li>
+<li>
+<p>The distance of point $P(-6, 8)$ from the origin is:<br />
+   (A) $6$<br />
+   (B) $8$<br />
+   (C) $10$<br />
+   (D) $14$</p>
+</li>
+<li>
+<p>The coordinates of the mid-point of line segment joining $(2, -3)$ and $(6, 5)$ are:<br />
+   (A) $(4, 1)$<br />
+   (B) $(4, 2)$<br />
+   (C) $(8, 2)$<br />
+   (D) $(3, 1)$</p>
+</li>
+<li>
+<p>The perimeter of a circle of radius $7\text{ cm}$ is:<br />
+   (A) $22\text{ cm}$<br />
+   (B) $44\text{ cm}$<br />
+   (C) $154\text{ cm}$<br />
+   (D) $88\text{ cm}$</p>
+</li>
+<li>
+<p>The volume of a cylinder whose radius is $3\text{ cm}$ and height is $7\text{ cm}$ is (take $\pi = \frac{22}{7}$):<br />
+    (A) $66\text{ cm}^3$<br />
+    (B) $198\text{ cm}^3$<br />
+    (C) $132\text{ cm}^3$<br />
+    (D) $44\text{ cm}^3$</p>
+</li>
+<li>
+<p>The value of $\tan 45^\circ + \cos 60^\circ$ is:<br />
+    (A) $1$<br />
+    (B) $\frac{3}{2}$<br />
+    (C) $\frac{1}{2}$<br />
+    (D) $2$</p>
+</li>
+<li>
+<p>The value of $\sec^2 45^\circ - \tan^2 45^\circ$ is:<br />
+    (A) $0$<br />
+    (B) $1$<br />
+    (C) $2$<br />
+    (D) $-1$</p>
+</li>
+<li>
+<p>The mean of $4, 6, 8, x, 12$ is $8$. The value of $x$ is:<br />
+    (A) $8$<br />
+    (B) $10$<br />
+    (C) $9$<br />
+    (D) $7$</p>
+</li>
+<li>
+<p>The mode of the data $2, 3, 5, 3, 7, 3, 8, 2$ is:<br />
+    (A) $2$<br />
+    (B) $3$<br />
+    (C) $5$<br />
+    (D) $7$</p>
+</li>
+<li>
+<p>If the empirical formula connects mode, median, and mean, then Mode equals:<br />
+    (A) $3\,\text{Median} - 2\,\text{Mean}$<br />
+    (B) $2\,\text{Median} - 3\,\text{Mean}$<br />
+    (C) $3\,\text{Mean} - 2\,\text{Median}$<br />
+    (D) $\text{Median} - \text{Mean}$</p>
+</li>
+<li>
+<p>A die is thrown once. The probability of getting a number greater than $4$ is:<br />
+    (A) $\frac{1}{6}$<br />
+    (B) $\frac{1}{3}$<br />
+    (C) $\frac{1}{2}$<br />
+    (D) $\frac{2}{3}$</p>
+</li>
+<li>
+<p>If $P(E) = 0.35$, then $P(\bar{E})$ is:<br />
+    (A) $0.65$<br />
+    (B) $0.75$<br />
+    (C) $0.35$<br />
+    (D) $1.35$</p>
+</li>
+</ol>
+<hr />
+<h3>Q18 to Q27: Objective Questions (2 Marks Each — 1 Mark Per Sub-Part)</h3>
+<ol>
+<li>
+<p><strong>Fill in the blanks</strong>:<br />
+    (i) The two factors of $x^2 - 7x + 12$ are $(x - 3)$ and <code>______</code>.<br />
+    (ii) The value of the polynomial $3x^2 - 5x + 7$ at $x = 1$ is <code>______</code>.</p>
+</li>
+<li>
+<p><strong>True or False</strong>:<br />
+    (i) The roots of $x^2 + 4x + 4 = 0$ are real and equal. (<code>TRUE / FALSE</code>)<br />
+    (ii) The $n$-th term of an AP whose first term is $a$ and common difference is $d$ is given by $a + nd$. (<code>TRUE / FALSE</code>)</p>
+</li>
+<li>
+<p><strong>Fill in the blanks</strong>:<br />
+    (i) A tangent to a circle intersects it in exactly <code>______</code> point.<br />
+    (ii) The lengths of tangents drawn from an external point to a circle are <code>______</code>.</p>
+</li>
+<li>
+<p><strong>True or False</strong>:<br />
+    (i) The angle in a semicircle is an acute angle. (<code>TRUE / FALSE</code>)<br />
+    (ii) In a cyclic quadrilateral, the sum of opposite angles is $180^\circ$. (<code>TRUE / FALSE</code>)</p>
+</li>
+<li>
+<p><strong>Fill in the blanks</strong>:<br />
+    (i) The distance of the point $(0, 5)$ from the x-axis is <code>______</code> units.<br />
+    (ii) The midpoint of the line segment joining $(0, 0)$ and $(4, 6)$ is <code>______</code>.</p>
+</li>
+<li>
+<p><strong>True or False</strong>:<br />
+    (i) $\sin^2 60^\circ + \cos^2 60^\circ = 1$. (<code>TRUE / FALSE</code>)<br />
+    (ii) The value of $\tan 90^\circ$ is $0$. (<code>TRUE / FALSE</code>)</p>
+</li>
+<li>
+<p><strong>Fill in the blanks</strong>:<br />
+    (i) The total surface area of a cube of edge $a$ is <code>______</code>.<br />
+    (ii) The curved surface area of a cylinder of radius $r$ and height $h$ is <code>______</code>.</p>
+</li>
+<li>
+<p><strong>True or False</strong>:<br />
+    (i) The probability of an event can never exceed $1$. (<code>TRUE / FALSE</code>)<br />
+    (ii) Two coins tossed together yield 6 possible outcomes. (<code>TRUE / FALSE</code>)</p>
+</li>
+<li>
+<p><strong>Installment Buying (Fill in the blanks)</strong>:<br />
+    A bicycle has a cash price of ₹3,000. Under an installment plan, ₹600 is paid as down payment.<br />
+    (i) The unpaid balance is <code>______</code>.<br />
+    (ii) If the remaining balance is cleared in 4 equal monthly installments of ₹650, the total interest paid is <code>______</code>.</p>
+</li>
+<li>
+<p><strong>Match the following</strong>:<br />
+    | Column I | Column II |<br />
+    | :--- | :--- |<br />
+    | (i) $\sin 30^\circ$ | (a) $\sqrt{3}$ |<br />
+    | (ii) $\tan 60^\circ$ | (b) $\frac{1}{2}$ |</p>
+</li>
+</ol>
+<hr />
+<h3>Q28: Context / Case Study Question (5 Marks — 1 Mark Per Sub-Part)</h3>
+<ol>
+<li><strong>Case Study</strong>: A mathematics exhibition model displays a circular garden with centre $O$ and radius $10\text{ m}$. Two watchtowers are set up at points $A$ and $B$ along the boundary. Two straight pathways $PA$ and $PB$ meet at an observation gate $P$ outside the garden. $PA$ and $PB$ are tangents to the circular garden, and $\angle APB = 60^\circ$.<br />
+    (i) What is the measure of $\angle OAP$?<br />
+    (ii) What is the measure of central angle $\angle AOB$?<br />
+    (iii) If $PA = 15\text{ m}$, what is the length of pathway $PB$?<br />
+    (iv) What type of triangle is $\Delta PAB$?<br />
+    (v) What is the perimeter of quadrilateral $OAPB$ if $PA = 15\text{ m}$ and radius $= 10\text{ m}$?</li>
+</ol>
+<hr />
+<h2>SECTION B (Subjective Questions — 43 Marks)</h2>
+<h3>Q29 to Q37: Very Short Answer Questions (2 Marks Each — 18 Marks)</h3>
+<ol>
+<li>Simplify using algebraic identities: $(2x + 5y)^2 - (2x - 5y)^2$.</li>
+<li>Find the discriminant and hence write the nature of the roots of the equation $3x^2 - 5x + 2 = 0$.</li>
+<li>Find the $20^{\text{th}}$ term of the AP $4, 9, 14, 19\dots$</li>
+<li>Tangents $PA$ and $PB$ are drawn from point $P$ to a circle with centre $O$. If $OP = 10\text{ cm}$ and radius $OA = 6\text{ cm}$, calculate the length of tangent $PA$.</li>
+<li>In the given figure, $ABCD$ is a cyclic quadrilateral. If $\angle A = (2x + 10)^\circ$ and $\angle C = (3x + 20)^\circ$, find the value of $x$ and the measure of $\angle A$.</li>
+<li>Find the coordinates of the point which divides the line segment joining $A(1, 3)$ and $B(4, 6)$ internally in the ratio $2 : 1$.</li>
+<li>Find the area of a sector of a circle of radius $6\text{ cm}$ if the central angle is $60^\circ$. (Take $\pi = \frac{22}{7}$).</li>
+<li>Evaluate: $\frac{5\cos^2 60^\circ + 4\sec^2 30^\circ - \tan^2 45^\circ}{\sin^2 30^\circ + \cos^2 30^\circ}$.</li>
+<li>A card is drawn at random from a pack of 52 playing cards. Find the probability that the card drawn is:<br />
+    (i) A king of red colour<br />
+    (ii) A spade</li>
+</ol>
+<hr />
+<h3>Q38 to Q42: Short Answer Questions (3 Marks Each — 15 Marks)</h3>
+<ol>
+<li>Factorise: $x^3 - 8y^3$.</li>
+<li>Find the ratio in which the point $P(-1, 6)$ divides the line segment joining the points $A(-3, 10)$ and $B(6, -8)$.</li>
+<li>Construct a circle of radius $3.5\text{ cm}$. From a point $P$ at a distance of $6.5\text{ cm}$ from its centre, construct a pair of tangents to the circle.</li>
+<li>A solid metallic cylinder of radius $4.2\text{ cm}$ and height $10\text{ cm}$ is melted and recast into a sphere. Find the radius of the sphere.</li>
+<li>Calculate the median of the following frequency distribution:<br />
+    | Class Interval | $0 - 10$ | $10 - 20$ | $20 - 30$ | $30 - 40$ | $40 - 50$ |<br />
+    | :--- | :---: | :---: | :---: | :---: | :---: |<br />
+    | <strong>Frequency ($f$)</strong> | $5$ | $8$ | $15$ | $12$ | $10$ |</li>
+</ol>
+<hr />
+<h3>Q43 to Q44: Long Answer Questions (5 Marks Each — 10 Marks)</h3>
+<ol>
+<li>
+<p>Solve the following system of linear equations graphically:<br />
+    $$x + y = 5$$<br />
+    $$2x - y = 4$$<br />
+    Find the vertices of the triangle formed by these two lines and the y-axis.</p>
+</li>
+<li>
+<p>A vertical pole of height $60\text{ m}$ stands on horizontal ground. From the top of the pole, the angles of depression of two cars parked on opposite sides of the pole are observed to be $30^\circ$ and $45^\circ$. Find the distance between the two cars. (Take $\sqrt{3} \approx 1.732$).</p>
+</li>
+</ol>
+<hr />
+<h1>COMPLETE STEP-BY-STEP SOLUTIONS &amp; MARKING SCHEME</h1>
+<h3>Section A Solutions</h3>
+<ul>
+<li><strong>Q1</strong>: (A) $8$ [$D = (-4)^2 - 4(2)(1) = 16 - 8 = 8$]</li>
+<li><strong>Q2</strong>: (B) $47$ [$a_{12} = 3 + (11)(4) = 47$]</li>
+<li><strong>Q3</strong>: (A) ₹600 [$CP = \frac{660}{1.1} = 600$]</li>
+<li><strong>Q4</strong>: (B) $13\text{ cm}$ [$OP = \sqrt{5^2 + 12^2} = 13$]</li>
+<li><strong>Q5</strong>: (C) $90^\circ$</li>
+<li><strong>Q6</strong>: (B) $95^\circ$ [$180 - 85 = 95$]</li>
+<li><strong>Q7</strong>: (C) $10$ [$\sqrt{(-6)^2 + 8^2} = 10$]</li>
+<li><strong>Q8</strong>: (A) $(4, 1)$ [$(\frac{2+6}{2}, \frac{-3+5}{2}) = (4, 1)$]</li>
+<li><strong>Q9</strong>: (B) $44\text{ cm}$ [$2 \times \frac{22}{7} \times 7 = 44$]</li>
+<li><strong>Q10</strong>: (B) $198\text{ cm}^3$ [$\frac{22}{7} \times 9 \times 7 = 198$]</li>
+<li><strong>Q11</strong>: (B) $\frac{3}{2}$ [$1 + \frac{1}{2} = \frac{3}{2}$]</li>
+<li><strong>Q12</strong>: (B) $1$ [Identity $\sec^2\theta - \tan^2\theta = 1$]</li>
+<li><strong>Q13</strong>: (B) $10$ [$\frac{4+6+8+x+12}{5} = 8 \implies 30 + x = 40 \implies x = 10$]</li>
+<li><strong>Q14</strong>: (B) $3$ [Most frequent]</li>
+<li><strong>Q15</strong>: (A) $3\,\text{Median} - 2\,\text{Mean}$</li>
+<li><strong>Q16</strong>: (B) $\frac{1}{3}$ [Numbers are $5, 6 \implies \frac{2}{6} = \frac{1}{3}$]</li>
+<li><strong>Q17</strong>: (A) $0.65$ [$1 - 0.35 = 0.65$]</li>
+<li><strong>Q18</strong>: (i) $(x - 4)$ | (ii) $5$ [$3(1) - 5(1) + 7 = 5$]</li>
+<li><strong>Q19</strong>: (i) TRUE [$D = 16 - 16 = 0$] | (ii) FALSE [Formula is $a + (n-1)d$]</li>
+<li><strong>Q20</strong>: (i) one | (ii) equal</li>
+<li><strong>Q21</strong>: (i) FALSE [It is $90^\circ$] | (ii) TRUE</li>
+<li><strong>Q22</strong>: (i) $5$ | (ii) $(2, 3)$</li>
+<li><strong>Q23</strong>: (i) TRUE | (ii) FALSE [$\tan 90^\circ$ is not defined]</li>
+<li><strong>Q24</strong>: (i) $6a^2$ | (ii) $2\pi rh$</li>
+<li><strong>Q25</strong>: (i) TRUE | (ii) FALSE [4 outcomes: HH, HT, TH, TT]</li>
+<li><strong>Q26</strong>: (i) ₹2,400 [$3000 - 600$] | (ii) ₹200 [$4 \times 650 = 2600 \implies 2600 - 2400 = 200$]</li>
+<li><strong>Q27</strong>: (i) $\to$ (b) $\frac{1}{2}$ | (ii) $\to$ (a) $\sqrt{3}$</li>
+<li><strong>Q28</strong>: (i) $90^\circ$ | (ii) $120^\circ$ [$180 - 60$] | (iii) $15\text{ m}$ [$PA = PB$] | (iv) Equilateral triangle [Since $PA = PB$ and $\angle P = 60^\circ$] | (v) $50\text{ m}$ [$15 + 15 + 10 + 10 = 50$]</li>
+</ul>
+<hr />
+<h3>Section B Detailed Solutions</h3>
+<p><strong>Q29</strong>:<br />
+Use identity $(a+b)^2 - (a-b)^2 = 4ab$.<br />
+Here $a = 2x, b = 5y \implies 4(2x)(5y) = \mathbf{40xy}$.</p>
+<p><strong>Q30</strong>:<br />
+$a = 3, b = -5, c = 2$.<br />
+$D = (-5)^2 - 4(3)(2) = 25 - 24 = \mathbf{1}$.<br />
+Since $D > 0$, the roots are <strong>real and distinct (unequal)</strong>.</p>
+<p><strong>Q31</strong>:<br />
+$a = 4, d = 5, n = 20$.<br />
+$a_{20} = a + (20 - 1)d = 4 + 19(5) = 4 + 95 = \mathbf{99}$.</p>
+<p><strong>Q32</strong>:<br />
+In right $\Delta OAP$, $\angle OAP = 90^\circ$.<br />
+By Pythagoras: $PA = \sqrt{OP^2 - OA^2} = \sqrt{10^2 - 6^2} = \sqrt{100 - 36} = \sqrt{64} = \mathbf{8\text{ cm}}$.</p>
+<p><strong>Q33</strong>:<br />
+Opposite angles sum to $180^\circ$:<br />
+$(2x + 10) + (3x + 20) = 180 \implies 5x + 30 = 180 \implies 5x = 150 \implies \mathbf{x = 30}$.<br />
+$\angle A = 2(30) + 10 = \mathbf{70^\circ}$.</p>
+<p><strong>Q34</strong>:<br />
+$m : n = 2 : 1$, $A(1, 3), B(4, 6)$.<br />
+$x = \frac{2(4) + 1(1)}{2 + 1} = \frac{8 + 1}{3} = \frac{9}{3} = 3$.<br />
+$y = \frac{2(6) + 1(3)}{2 + 1} = \frac{12 + 3}{3} = \frac{15}{3} = 5$.<br />
+Point is $\mathbf{(3, 5)}$.</p>
+<p><strong>Q35</strong>:<br />
+$\text{Area} = \frac{\theta}{360} \pi r^2 = \frac{60}{360} \times \frac{22}{7} \times 6 \times 6 = \frac{1}{6} \times \frac{22}{7} \times 36 = \frac{132}{7} \approx \mathbf{18.86\text{ cm}^2}$.</p>
+<p><strong>Q36</strong>:<br />
+Denominator $= \sin^2 30^\circ + \cos^2 30^\circ = 1$.<br />
+Numerator $= 5\left(\frac{1}{2}\right)^2 + 4\left(\frac{2}{\sqrt{3}}\right)^2 - (1)^2 = 5\left(\frac{1}{4}\right) + 4\left(\frac{4}{3}\right) - 1 = \frac{5}{4} + \frac{16}{3} - 1 = \frac{15 + 64 - 12}{12} = \mathbf{\frac{67}{12}}$.</p>
+<p><strong>Q37</strong>:<br />
+(i) Red Kings $= 2 \implies P = \frac{2}{52} = \mathbf{\frac{1}{26}}$.<br />
+(ii) Spades $= 13 \implies P = \frac{13}{52} = \mathbf{\frac{1}{4}}$.</p>
+<p><strong>Q38</strong>:<br />
+$x^3 - (2y)^3 = (x - 2y)(x^2 + 2xy + (2y)^2) = \mathbf{(x - 2y)(x^2 + 2xy + 4y^2)}$.</p>
+<p><strong>Q39</strong>:<br />
+Let ratio be $k : 1$.<br />
+Using x-coordinate: $-1 = \frac{k(6) + 1(-3)}{k + 1} \implies -(k + 1) = 6k - 3 \implies -k - 1 = 6k - 3 \implies 7k = 2 \implies k = \frac{2}{7}$.<br />
+Ratio is $\mathbf{2 : 7}$.</p>
+<p><strong>Q40</strong>:<br />
+Radius $r = 3.5\text{ cm}, OP = 6.5\text{ cm}$.<br />
+Length of tangent $= \sqrt{6.5^2 - 3.5^2} = \sqrt{(6.5 - 3.5)(6.5 + 3.5)} = \sqrt{3 \times 10} = \sqrt{30} \approx \mathbf{5.48\text{ cm}}$.</p>
+<p><strong>Q41</strong>:<br />
+Volume of cylinder $= \text{Volume of sphere}$<br />
+$\pi r_1^2 h = \frac{4}{3}\pi r_2^3 \implies (4.2)^2 \times 10 = \frac{4}{3} r_2^3$<br />
+$17.64 \times 10 = \frac{4}{3} r_2^3 \implies 176.4 \times \frac{3}{4} = r_2^3 \implies 132.3 = r_2^3 \implies r_2 \approx \mathbf{5.1\text{ cm}}$.</p>
+<p><strong>Q42</strong>:<br />
+Total $N = 5 + 8 + 15 + 12 + 10 = 50 \implies \frac{N}{2} = 25$.<br />
+Cumulative frequencies: $5, 13, 28, 40, 50$.<br />
+Median class is $20 - 30$ ($L = 20, cf = 13, f = 15, h = 10$).<br />
+$\text{Median} = 20 + \frac{25 - 13}{15} \times 10 = 20 + \frac{12}{15} \times 10 = 20 + 8 = \mathbf{28}$.</p>
+<p><strong>Q43</strong>:<br />
+- Equation 1 ($x + y = 5$): $(0, 5), (5, 0), (2, 3)$.<br />
+- Equation 2 ($2x - y = 4$): $(0, -4), (2, 0), (3, 2)$.<br />
+Intersection point: $x = 3, y = 2 \implies \mathbf{(3, 2)}$.<br />
+Vertices of triangle formed with y-axis ($x = 0$):<br />
+Line 1 hits y-axis at $(0, 5)$; Line 2 hits y-axis at $(0, -4)$; Intersection is $(3, 2)$.<br />
+Vertices: $\mathbf{(0, 5), \; (0, -4), \; (3, 2)}$.</p>
+<p><strong>Q44</strong>:<br />
+Let pole be $AB = 60\text{ m}$.<br />
+- Car 1 at $C$ (elevation $45^\circ$): $\tan 45^\circ = \frac{60}{BC} \implies BC = 60\text{ m}$.<br />
+- Car 2 at $D$ (elevation $30^\circ$): $\tan 30^\circ = \frac{60}{BD} \implies \frac{1}{\sqrt{3}} = \frac{60}{BD} \implies BD = 60\sqrt{3} = 60 \times 1.732 = 103.92\text{ m}$.<br />
+Total distance between cars:<br />
+$CD = BC + BD = 60 + 103.92 = \mathbf{163.92\text{ m}}$.</p>
+  </main>
+</div>
+</body>
+</html>
